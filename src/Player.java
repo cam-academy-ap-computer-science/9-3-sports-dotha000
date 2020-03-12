@@ -12,4 +12,13 @@ public class Player {
 	public String toString() {
 		return ("name: " +  name + "\nheight: " + height + " ft\nshoeSize: " + shoeSize + "\n");
 	}
+	
+	public boolean equals(Object o) {
+		if (o instanceof Player) {
+			Player other = (Player) o;
+			return (name == other.name && height == other.height && shoeSize == other.shoeSize);
+		} else {
+			return false;
+		}
+	}
 }

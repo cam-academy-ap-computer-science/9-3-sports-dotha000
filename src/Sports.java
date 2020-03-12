@@ -6,6 +6,8 @@ public class Sports {
 		System.out.println(x);
 		Basketball y = new Basketball("Kobe Bryant", 6.9, 11, 33.5);
 		System.out.println(y);
+		Basketball MJ = new Basketball("Michael Jordan", 7.0, 12, 33.5);
+		System.out.println(y.equals(MJ));
 	}
 
 }

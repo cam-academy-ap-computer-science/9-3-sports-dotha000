@@ -9,4 +9,12 @@ public class Tennis extends Player{
 	public String toString() {
 		return (super.toString() + "\nracket brand: " + racket + "\n");
 	}
+	public boolean equals(Object o) {
+		if (o instanceof Tennis) {
+			Tennis other = (Tennis) o;
+			return (super.equals(other) && racket == other.racket);
+		} else {
+			return false;
+		}
+	}
 }

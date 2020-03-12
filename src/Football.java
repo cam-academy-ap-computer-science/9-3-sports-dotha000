@@ -7,6 +7,15 @@ public class Football extends Player{
 	}
 	
 	public String toString() {
-		return (super.toString() + "\ntouchdown: " + touchdown + "\n");
+		return (super.toString() + "\ntouchdowns: " + touchdown + "\n");
+	}
+	
+	public boolean equals(Object o) {
+		if (o instanceof Football) {
+			Football other = (Football) o;
+			return (super.equals(other) && touchdown == other.touchdown);
+		} else {
+			return false;
+		}
 	}
 }
